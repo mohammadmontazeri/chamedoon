@@ -1,0 +1,7 @@
+Enter new Students :
+<hr>
+<%= form_for @student do |f| =%>
+firstName :  <%= f.text_field :first_name %>
+lastName  :  <%= f.text_field :last_name %>
+  <%= f.submit %>
+<% end =%>

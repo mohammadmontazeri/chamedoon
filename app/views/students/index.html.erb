@@ -1,0 +1,8 @@
+<% @students.each do |student| %>
+<h3><%= student.first_name %></h3>
+<h3><%= student.last_name %></h3>
+<p><%= link_to "Edit" , edit_student_path(student)  %></p>
+<p><%= link_to "Delete" ,student,:method => :delete  %></p>
+
+<hr>
+<% end %>
